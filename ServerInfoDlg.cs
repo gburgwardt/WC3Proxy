@@ -49,14 +49,18 @@ namespace Foole.WC3Proxy
         public ServerInfoDlg()
         {
             InitializeComponent();
-
+            cbxWC3Version.Items.Add(new WC3Version(0x1f, "1.31 preadd"));
+            cbxWC3Version.Items.Add(new WC3Version(0x1e, "1.30 preadd"));
+            cbxWC3Version.Items.Add(new WC3Version(0x1d, "1.29"));
+            cbxWC3Version.Items.Add(new WC3Version(0x1c, "1.28"));
+            cbxWC3Version.Items.Add(new WC3Version(0x1b, "1.27"));
             cbxWC3Version.Items.Add(new WC3Version(0x1a, "1.26"));
             cbxWC3Version.Items.Add(new WC3Version(0x19, "1.25"));
             cbxWC3Version.Items.Add(new WC3Version(0x18, "1.24"));
             cbxWC3Version.Items.Add(new WC3Version(0x17, "1.23"));
             cbxWC3Version.Items.Add(new WC3Version(0x16, "1.22"));
             cbxWC3Version.Items.Add(new WC3Version(0x15, "1.21"));
-            cbxWC3Version.Items.Add(new WC3Version(0x1b, "1.27 (Untested)"));
+            
         }
 
         public IPAddress Host
